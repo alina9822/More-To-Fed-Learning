@@ -1,0 +1,4 @@
+# Normalize notebooks on the way into git so commits show real changes, not
+# per-run ids and per-tool JSON formatting. Requires a one-time local setup:
+#   git config filter.nbnormalize.clean "python3 tools/nb_normalize.py"
+*.ipynb filter=nbnormalize
